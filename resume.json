@@ -62,7 +62,7 @@
   ],
   "workList": [],
   "aboutme": {
-    "aboutme_desc": "🌱 多年大型项目经历，专注在可视分析领域\n1. 项目管理: 具有独立跟进和推动项目进度经验，把控研发测试交付进展。2.可视化经验: 通用组件设计和开发经验丰富，也能完成定制可视化诉求\n其它: 1. 前端早早聊 分享 “如何构思和开发开箱即用的可视化图表库 G2Plot” 2. 蚂蚁集团前端练习生 可视化讲师 3. D2论坛小游戏: https://antv.gitee.io/zh/d2, https://antv-studio.antfin.com/bless-heatmap"
+    "aboutme_desc": "\n1. 熟悉 Java 知识，如集合类、Java 安全管理器、进程类、编译执行原理、部分 JVM 参数。2.可视化经验: 通用组件设计和开发经验丰富，也能完成定制可视化诉求\n2. 熟悉 SSM + Spring Boot 开发框架，能够使用 MyBatis Plus + MyBatis X 自动生成基础 CRUD 代码\n3. 熟悉 MySQL 数据库及库表设计，有过自定义索引的性能优化实践经历 \n4. 熟悉并实践过多种设计模式，比如策略模式、工厂模式、模板方法模式、代理模式"
   },
   "theme": {
     "color": "#2f5785",
