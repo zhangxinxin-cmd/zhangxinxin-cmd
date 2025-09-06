@@ -57,7 +57,7 @@
       "project_role": "主要代码编写",
       "project_time": "2024.12 - 2025.02",
       "project_desc": "在xv6操作系统代码的基础上完成了一系列补充设计——增添系统调用，增添页表功能，内核函数调用地址的回溯，程序警报，懒加载，写时复制，用户级线程实现，cpu内存分配，增加xv6文件的最大大小，添加符号链接，mmap实现。",
-      "project_content": "在该项目中负责内核和应用层代码的编写\n1. 熟悉 xv6 系统调用流程，完成追踪函数 systrace；实现获取空闲内存和活动进程数的系统调用 sy_sinfo。\n2. 理解基于二级页表的虚拟内存映射，基于 freewalk 打印页表，获得进程页面访问信息。\n3. 掌握栈帧结构，实现 Backtrace；理解陷阱处理，实现定时报警。\n4. 在 sbrk 调用中不立即分配物理内存，而在缺页中断时才分配，实现 lazy allocation。\n5. 添加引用计数，在复制内存时父子共享并禁用 PTE_W，页错误时才真正分配，实现 Copy-on-Write Fork。\n6. 扩展文件系统：增大 addrs 数组，修改 bmap 支持二级索引，更新 itrunc 释放所有块，从而支持更大文件。\n7. 在文件描述符层实现符号链接：新增 T_SYMLINK 文件并写入目标路径，实现 sys_symlink；修改 sys_open 递归解析直至非符号链接。\n8. 借鉴 lazy allocation 思路，实现 mmap 系统调用：仅增加 sz，在页面错误时加载文件内容。"
+      "project_content": "在该项目中负责内核和应用层代码的编写\n1. 熟悉 xv6 系统调用流程，完成追踪函数 systrace；实现获取空闲内存和活动进程数的 sy_sinfo。\n2. 理解二级页表映射，基于 freewalk 打印页表，获取进程页面信息。\n3. 掌握栈帧结构，实现 Backtrace；理解陷阱处理，实现定时报警。\n4. 在 sbrk 调用中不立即分配物理内存，而在缺页中断时才分配，实现 lazy allocation。\n5. 添加引用计数，复制内存时父子共享并禁用 PTE_W，页错误时才分配，实现 Copy-on-Write Fork。\n6. 扩展文件系统：增大 addrs，修改 bmap 支持二级索引，更新 itrunc 释放所有块，支持更大文件。\n7. 在文件描述符层实现符号链接：创建 T_SYMLINK 文件写入目标路径，实现 sys_symlink；修改 sys_open 递归解析。\n8. 借鉴 lazy allocation，实现 mmap 系统调用：仅增加 sz，在页面错误时加载内容。"
     }
   ],
   "workList": [],
